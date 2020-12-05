@@ -1,0 +1,16 @@
+# Cuda version
+
+cmake_minimum_required(VERSION 2.8.11)
+project(PARTICLE_FILTER LANGUAGES CUDA CXX)
+
+# Build the particle filter project and solution.
+# Use C++11
+
+# CPU
+#set(SRCS src/main_mrclam.cpp src/particle_filter_mrclam.cpp)
+# GPU
+set(SRCS src/cuda_ver/main.cu src/cuda_ver/particle_filter.cu)
+
+set_source_files_properties(${SRCS} PROPERTIES COMPILE_FLAGS -lcurand)
+# Create the executable
+add_executable(particle_filter ${SRCS})

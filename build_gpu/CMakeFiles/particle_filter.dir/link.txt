@@ -1,0 +1,1 @@
+/usr/lib/nvidia-cuda-toolkit/bin/g++  CMakeFiles/particle_filter.dir/src/cuda_ver/main.cu.o CMakeFiles/particle_filter.dir/src/cuda_ver/particle_filter.cu.o -o particle_filter  -L"/usr/lib/x86_64-linux-gnu/stubs" -L"/usr/lib/x86_64-linux-gnu" -lcudadevrt -lcudart_static -lrt -lpthread -ldl
